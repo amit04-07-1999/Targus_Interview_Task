@@ -1,0 +1,88 @@
+.health-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.status-text {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.health-error {
+  max-width: 200px;
+  text-align: center;
+}
+
+.health-error small {
+  color: #dc3545;
+  font-size: 0.7rem;
+  word-wrap: break-word;
+}
+
+.health-info {
+  text-align: center;
+}
+
+.health-info small {
+  color: #666;
+  font-size: 0.7rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .health-indicator {
+    padding: 0.25rem;
+  }
+  
+  .status-badge {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .status-text {
+    font-size: 0.7rem;
+  }
+}
