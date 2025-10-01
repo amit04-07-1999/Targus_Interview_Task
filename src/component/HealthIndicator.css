@@ -71,18 +71,137 @@
   font-size: 0.7rem;
 }
 
-/* Responsive design */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .health-indicator {
+    padding: 0.4rem;
+  }
+  
+  .status-badge {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
+  }
+  
+  .status-text {
+    font-size: 0.75rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .health-indicator {
+    padding: 0.3rem;
+  }
+  
+  .status-badge {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+  }
+  
+  .status-dot {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .status-text {
+    font-size: 0.7rem;
+  }
+  
+  .health-error small {
+    font-size: 0.65rem;
+  }
+  
+  .health-info small {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 640px) {
   .health-indicator {
     padding: 0.25rem;
   }
   
   .status-badge {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  
+  .status-dot {
+    width: 5px;
+    height: 5px;
   }
   
   .status-text {
+    font-size: 0.65rem;
+  }
+  
+  .health-error {
+    max-width: 150px;
+  }
+  
+  .health-error small {
+    font-size: 0.6rem;
+  }
+  
+  .health-info small {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .health-indicator {
+    padding: 0.2rem;
+  }
+  
+  .status-badge {
+    padding: 0.3rem 0.5rem;
     font-size: 0.7rem;
+  }
+  
+  .status-dot {
+    width: 4px;
+    height: 4px;
+  }
+  
+  .status-text {
+    font-size: 0.6rem;
+  }
+  
+  .health-error {
+    max-width: 120px;
+  }
+  
+  .health-error small {
+    font-size: 0.55rem;
+  }
+  
+  .health-info small {
+    font-size: 0.55rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .health-indicator {
+    padding: 0.15rem;
+  }
+  
+  .status-badge {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.65rem;
+  }
+  
+  .status-text {
+    font-size: 0.55rem;
+  }
+  
+  .health-error {
+    max-width: 100px;
+  }
+  
+  .health-error small {
+    font-size: 0.5rem;
+  }
+  
+  .health-info small {
+    font-size: 0.5rem;
   }
 }

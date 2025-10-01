@@ -2,6 +2,137 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .upload-container {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .file-drop-zone {
+    padding: 2rem 1rem;
+  }
+
+  .drop-zone-content p {
+    font-size: 0.9rem;
+  }
+
+  .upload-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .selected-file {
+    padding: 0.75rem;
+  }
+
+  .upload-button {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .upload-container {
+    padding: 1rem;
+  }
+
+  .file-drop-zone {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .drop-zone-content p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .upload-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .selected-file p {
+    font-size: 0.9rem;
+  }
+
+  .upload-button {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .progress-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .upload-container {
+    padding: 0.75rem;
+  }
+
+  .upload-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .file-drop-zone {
+    padding: 1.25rem 0.5rem;
+  }
+
+  .drop-zone-content p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .upload-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .selected-file {
+    padding: 0.5rem;
+  }
+
+  .selected-file p {
+    font-size: 0.85rem;
+    margin: 0.25rem 0;
+  }
+
+  .upload-button {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .status-message {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .upload-container {
+    padding: 0.5rem;
+  }
+
+  .upload-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .file-drop-zone {
+    padding: 1rem 0.25rem;
+  }
+
+  .drop-zone-content p {
+    font-size: 0.75rem;
+  }
+
+  .upload-icon {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .upload-container h2 {
